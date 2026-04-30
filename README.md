@@ -1,11 +1,11 @@
 # Heart-Disease-Prediction-System
 
-## 📌 Overview
+## Overview
 This project is a Machine Learning-based system that predicts the likelihood of heart disease using patient health data. It helps in early detection by analyzing key medical attributes and providing accurate predictions.
 
 ---
 
-## 🚀 Features
+## Features
 - Predicts heart disease using a trained ML model  
 - Uses Random Forest algorithm for classification  
 - Data preprocessing and feature engineering  
@@ -14,14 +14,14 @@ This project is a Machine Learning-based system that predicts the likelihood of 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Programming Language:** Python  
 - **Libraries:** Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn  
 - **Tools:** Jupyter Notebook / VS Code  
 
 ---
 
-## 📊 Dataset
+## Dataset
 - Contains patient health parameters such as:
   - Age  
   - Sex  
@@ -33,7 +33,7 @@ This project is a Machine Learning-based system that predicts the likelihood of 
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 1. Data collection and loading  
 2. Data preprocessing (handling missing values, scaling, etc.)  
 3. Exploratory Data Analysis (EDA)  
@@ -42,7 +42,7 @@ This project is a Machine Learning-based system that predicts the likelihood of 
 
 ---
 
-## 📈 Model Performance
+## Model Performance
 - Algorithm Used: **Random Forest Classifier**  
 - Evaluation Metrics:
   - Accuracy  
