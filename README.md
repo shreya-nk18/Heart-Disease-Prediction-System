@@ -30,7 +30,6 @@ This project is a Machine Learning-based system that predicts the likelihood of 
   - Heart Rate  
   - Other medical attributes  
 
-*(You can mention dataset source here if available)*
 
 ---
 
