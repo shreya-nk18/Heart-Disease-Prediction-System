@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart Disease Predictor</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+background:white;
+padding:30px;
+width:900px;
+border-radius:15px;
+box-shadow:0 15px 40px rgba(0,0,0,0.3);
+}
+
+.title{
+text-align:center;
+margin-bottom:20px;
+}
+
+.title h1{
+color:#2c5364;
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.input-group{
+display:flex;
+flex-direction:column;
+}
+
+label{
+font-weight:600;
+margin-bottom:5px;
+color:#333;
+}
+
+input{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+transition:0.3s;
+}
+
+input:focus{
+outline:none;
+border-color:#2c5364;
+box-shadow:0 0 5px rgba(44,83,100,0.5);
+}
+
+button{
+margin-top:20px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#2c5364;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#1e3c50;
+}
+
+.result{
+margin-top:20px;
+padding:15px;
+border-radius:8px;
+background:#f4f6f8;
+text-align:center;
+font-size:18px;
+font-weight:bold;
+color:#2c5364;
+}
+
+.footer{
+text-align:center;
+margin-top:10px;
+font-size:12px;
+color:#888;
+}
+
+@media(max-width:768px){
+.container{
+width:95%;
+}
+
+.form-grid{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">
+<h1>❤️ Heart Disease Prediction</h1>
+<p>Enter patient medical details</p>
+</div>
+
+<form action="/predict" method="post">
+
+<div class="form-grid">
+
+<div class="input-group">
+<label>Age</label>
+<input type="text" name="age" required>
+</div>
+
+<div class="input-group">
+<label>Sex (0=Female,1=Male)</label>
+<input type="text" name="sex" required>
+</div>
+
+<div class="input-group">
+<label>Chest Pain Type</label>
+<input type="text" name="cp" required>
+</div>
+
+<div class="input-group">
+<label>Resting Blood Pressure</label>
+<input type="text" name="trestbps" required>
+</div>
+
+<div class="input-group">
+<label>Cholesterol</label>
+<input type="text" name="chol" required>
+</div>
+
+<div class="input-group">
+<label>Fasting Blood Sugar</label>
+<input type="text" name="fbs" required>
+</div>
+
+<div class="input-group">
+<label>Rest ECG</label>
+<input type="text" name="restecg" required>
+</div>
+
+<div class="input-group">
+<label>Max Heart Rate</label>
+<input type="text" name="thalach" required>
+</div>
+
+<div class="input-group">
+<label>Exercise Induced Angina</label>
+<input type="text" name="exang" required>
+</div>
+
+<div class="input-group">
+<label>Oldpeak</label>
+<input type="text" name="oldpeak" required>
+</div>
+
+<div class="input-group">
+<label>Slope</label>
+<input type="text" name="slope" required>
+</div>
+
+<div class="input-group">
+<label>CA</label>
+<input type="text" name="ca" required>
+</div>
+
+<div class="input-group">
+<label>Thal</label>
+<input type="text" name="thal" required>
+</div>
+
+</div>
+
+<button type="submit">Predict Heart Disease</button>
+
+</form>
+
+<div class="result">
+{{ prediction_text }}
+</div>
+
+<div class="footer">
+Machine Learning based Heart Disease Detection
+</div>
+
+</div>
+
+</body>
+</html>
